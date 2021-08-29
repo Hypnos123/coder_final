@@ -1,0 +1,258 @@
+/*
+    ** All elements border-box
+*/
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    ** Root element font size
+    ** No default margins and paddings
+*/
+html,
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    **root elements display block
+*/
+html,
+body {
+    display: block;
+}
+
+/*
+    ** Body main style
+*/
+body {
+    line-height: 1.111101111;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    background-color: #333333;
+    padding: 2rem 1rem;
+    color: #fff;
+    font-size: 14px;
+}
+/* GRID SYSTEM */
+$cols       :   12;
+$gap        :   24px;
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+
+    height: 100vh;
+    max-width: 1250px;
+}
+
+.gs\:grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: $gap / -2;
+    margin-right: $gap / -2;
+}
+
+[class*="col-"],
+.col{
+    width: 100%;
+    max-width: 100%;
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    
+}
+
+@mixin grid-system($mq){
+    .#{ $mq }{
+        flex: 1 0 0;
+    }
+    
+    @for $col from 1 through $cols{
+        .#{ $mq }-#{ $col }{
+            flex: 0 0 (100% / $cols) * $col;
+            max-width: (100% / $cols) * $col;
+        }
+    }
+}
+
+@include grid-system(col);
+
+@media screen and (min-width: 578px){
+    @include grid-system(sm\:col)
+}
+
+@media screen and (min-width: 1024px){
+    @include grid-system(md\:col)
+}
+
+/* FOR EXAMPLE */
+.col-ex{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    display: grid;
+    place-items: center;
+    border: 0px solid;
+    background-color: white;
+}
+
+.bordev{
+    border: 0px solid;
+   
+}
+
+.border1{
+  align-items: center;
+  row-gap: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid #f1c40f;
+  text-align: center;
+  background-color: black;
+}
+
+.border2{
+    display: flex;
+    align-items: center;
+    row-gap: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid #f1c40f;
+    background-color: black;
+  }
+  .border3{
+    display: flex;
+    align-items: center;
+    row-gap: 5px;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid #f1c40f;
+    background-color: black;
+  }
+
+.cabecera {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+  }
+
+  .bodycabecera{
+      row-gap: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  li:hover {
+    background: grey;
+  }
+  
+  ul ul {
+    position: absolute;
+    display: none;
+  }
+  
+  ul ul li {
+    display: block;
+  }
+  
+  ul li:hover ul {
+    display: block;
+    z-index: 9;
+    background: black;
+    top: 38px;
+    left: 0px;
+  }
+
+  .title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: auto;
+    font-weight: 100;
+    font-family: var(--ea-theme-typographic-headings-font-family);
+    background-color: red;
+    width: 500px; height: 70px;
+    transition: all 2s;
+  }
+  
+  .title:hover {
+    height: 90px; width: 100%;
+    padding: 20px;
+    background-color: #F39C12 ;
+    color: red;
+  }
+
+  .title2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: auto;
+    font-weight: 100;
+    font-family: var(--ea-theme-typographic-headings-font-family);
+    background-color: #F39C12;
+    width: 500px; height: 70px;
+    transition: all 2s;
+  }
+  
+  .title2:hover {
+    height: 100px; width: 100%;
+    padding: 20px;
+    background-color: red;
+    color: #F39C12;
+  }
+
+  p{
+   background-color: black;
+  }
+
+  h1{
+      color: black;
+  }
+
+  h2{
+      color: black;
+  }
+
+  h3{
+      text-align: center;
+  }
+
+  .ache2{
+      color: red;
+  }
+  
+
+  @import "../bootstrap-5.1.0/scss/bootstrap";
+
+
+  
+ 
+ 
+
+

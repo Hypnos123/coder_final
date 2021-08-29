@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primaryColor: #2B2E4A;
+  --secondColor: #E84545;
+  --secondDarkColor: #903749;
+  --primaryDarkColor: #53354A;
+
+  --fontColor: #fff;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 1px black;
+}
+
+h2 {
+  color: rgb(255, 222, 222);
+}
+
+h3 {
+  background-color: white;
+  color: var(--secondColor);
+  text-transform: uppercase;
+}
+
+.arriba {
+  text-transform: uppercase;
+  background-color: black;
+}
+
+p {
+  color: white;
+}
+
+body {
+  background-color: var(--primaryColor);
+}
+
+.cabecera {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.descripción {
+  line-height: 1.6;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+.informaciónDeLosJuegos {
+  color: white;
+}
+
+.redesSociales {
+  display: flex;
+  column-gap: 15px;
+  color: white;
+  text-align: center;
+}
+
+.categoriaAccion {
+  text-align: center;
+}
+
+.itemAccion {
+  background-color: white;
+  border-radius: 20px;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid #f1c40f;
+}
+
+.itemAccion img {
+  width: 150px;
+}
+
+.itemAccion p {
+  color: black;
+}
+
+.precio {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.botonComprar {
+  color: white;
+  background-color: rgb(43, 54, 82);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.video, .video2, .video3 {
+  width: 400px;
+  height: 240px;
+}
+
+
+.información {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.informacion2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 1294px;
+  padding-top: 102px;
+}
+
+.slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  display: flex;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 0px;
+}
+
+.formularioLogin {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+}
+
+.formularioLogin p {
+  color: black;
+}
+
+.botonEnviar {
+  color: white;
+  background-color: rgb(43, 54, 82);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.botonRegistrar {
+  color: rgb(43, 54, 82);
+  border: 1px solid rgb(43, 54, 82);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form-login {
+  text-align: center;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+}
+
+.piePagina {
+  margin: 15px;
+  margin-left: 480px;
+}
+
+.vip {
+  background-color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  margin: auto;
+  font-weight: 600;
+  background-color: var(--secondDarkColor);
+  color: var(--fontColor);
+  width: 100%;
+  height: 100px;
+  animation: scale 3s infinite ease-out;
+  padding: 0 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+@keyframes scale {
+  0% {
+    background-color: var(--secondColor);
+  }
+
+  100% {
+    background-color: var(--primaryDarkColor);
+    color: var(--fontColor);
+  }
+}
+
+.title:hover {
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0%;
+  background-color: var(--primaryDarkColor);
+  color: var(--fontColor);
+}
+
+.title2 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: auto;
+  font-weight: 100;
+  font-family: var(--ea-theme-typographic-headings-font-family);
+  background-color: #F39C12;
+  width: 500px;
+  height: 130px;
+  transition: all 2s;
+}
+
+.title2:hover {
+  height: 100px;
+  width: 1519px;
+  padding: 20px;
+  background-color: red;
+  color: #F39C12;
+}
+
+.container-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-cards .card {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(1, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 330px;
+  height: 200px;
+}
+
+.container .card h4 {
+  font-weight: 600;
+}
+
+.container .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: red;
+}
+
+.letra {
+  color: black;
+}
+
+.btn-large {
+  width: 100%;
+  padding: 10px;
+  color: var(--fontColor);
+  background-color: var(--secondColor);
+}
+
+.btn-large:hover {
+  background-color: var(--secondDarkColor);
+  color: var(--fontColor);
+  transition: background 1s, color 1s;
+}
+
+.title3 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: auto;
+  font-weight: 100;
+  font-family: var(--ea-theme-typographic-headings-font-family);
+  background-color: #F39C12;
+  width: 570px;
+  height: 60px;
+  transition: all 2s;
+}
+
+.title3:hover {
+  height: 57px;
+  width: 1519px;
+  padding: 20px;
+  background-color: black;
+  color: #F39C12;
+}
+
+.art1 {
+  justify-content: center;
+  background: url(images/fondo1.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: serif;
+}
+
+.art2 {
+  background: url(images/cine1.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: serif;
+}
+
+.netflix {
+  background: url(images/netflix1.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: serif;
+}
+
+/**/
+
+.article10{
+  background-color: #040119;
+  height: 100%;
+  padding: 1px;
+  margin: 0;
+  cursor: pointer;
+}
+:root{
+  --color1:#928787;
+}
+.cont-padre{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 70px 0;
+}
+.contenedor10{
+  height: 450px;
+  width: 21%;
+  margin: 0 15px;
+ overflow: hidden;
+}
+.contenedor10 img{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.box-datos{
+  height: 235px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: .4s;
+}
+.box-datos h1{
+  font-size: 1em;
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+.box-datos h2{
+  font-size: .8em;
+}
+.box-datos h1,h2{
+  font-family: sans-serif;
+  text-align: center;
+  color: var(--color1);
+}
+.box-datos p{
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  width: 80%;
+  color: var(--color1);
+}
+.box-datos span{
+  margin: 0 20px;
+  font-size: 1.2em;
+}
+.contenedor10:hover .box-datos{
+  transform: translateY(-160px);
+}
+.ache1{
+  text-shadow: none;
+}
+
+@media screen and (max-width:1024px){
+  .cont-padre .contenedor10{
+       width: 30%;
+       margin: 15px;
+   }
+}
+@media screen and (max-width:800px){
+  .cont-padre .contenedor10{
+       width: 50%;
+       margin: 15px;
+   }
+}
+@media screen and (max-width:768px){
+  .cont-padre .contenedor10{
+       width: 40%;
+       margin: 15px;
+   }
+}
+@media screen and (max-width:600px){
+  .cont-padre .contenedor10{
+       width: 55%;
+       margin:20px 10px;
+   }
+}
+@media screen and (max-width:414px){
+   .cont-padre .contenedor10{
+        width: 100%;
+        margin:20px  10px;
+    }
+}
+@media screen and (max-width:360px){
+   .cont-padre .contenedor10{
+        width:100%;
+        margin:20px 10px;
+    }
+}
+
+.ache2{
+  text-align: center;
+  color: black;
+  text-align: center;
+  background-color: #C7A612;
+}
+
+h4{
+  color: black;
+  text-align: center;
+  background-color: #C7A612;
+  
+}
+.col-ex{
+  background-color: white;
+}
+
+.noticias1{
+  color: #8AA137;
+}
+
+.sesion1{
+  background-color: white;
+}
+ .text-center{
+   background-color: yellowgreen;
+ }
