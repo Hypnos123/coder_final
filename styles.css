@@ -470,9 +470,13 @@ html, body {
 
 .ache2{
   text-align: center;
-  color: black;
-  text-align: center;
   background-color: #C7A612;
+}
+
+.ache2-1{
+background-color: #8AA137;
+color: royalblue;
+text-align: center;
 }
 
 h4{
