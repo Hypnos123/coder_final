@@ -13,9 +13,12 @@
   <link rel="stylesheet" href="bootstrap.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="" href="css/destino.css">
+  <!--CDN Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
+  
   <!-- body cabezera -->
   <header class="cabecera">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,7 +41,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="accion.html">Accion</a></li>
-                <li><a class="dropdown-item" href="deporte.html">Deporte</a></li>
+                <li><a class="dropdown-item" href="Suspenso.html">Suspenso</a></li>
                 <li><a class="dropdown-item" href="estrategia.html">Estrategia</a></li>
               </ul>
             </li>
@@ -243,51 +246,58 @@
     </section>>
   </article>
 
-  <footer class="footer">
-    <div>
-      <h2>Más sobre la tienda de juegos online:</h2>
-      <p class="descripción">
-        Somos una pagina segura de venta de videojuegos, con precios bajos y
-        hasta promociones por momentos.
-      </p>
-      <p class="aviso">- Con precios de hasta 5 dolares a más.</p>
-    </div>
-    <div id="contacto">
-      <h2>Contacto:</h2>
-      <p class="descripción">"Texto sobre como contactarnos"</p>
-      <p class="aviso">Redes sociales</p>
-    </div>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <nav class="row">
+        <!--Logo -->
+         <a 
+           href="#" 
+           class="col-3 text-reset text-uppercase d-flex align-items-center">
+           <img width="100px" height="100px"
+           src="images/logo2.png" 
+           alt="Logo weston" 
+           class="img-logo mr-2">
+         </a>
 
-    <div>
-      <h2>Conectate a nuestras redes:</h2>
-      <div class="redesSociales">
-        <div>
-          <a href="https://es-la.facebook.com/" target="_blank">
-            <img src="images/Logo de facebook.png" alt="Icono de facebook" width="50" height="50" />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.instagram.com/?hl=es">
+        <!--Menu -->
+         <ul class="col-3 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Todos los derechos reservados</li>
+            <li><a href="#" class="text-reset">Nosotros</a></li>
+            <li><a href="#" class="text-reset">Descuentos</a></li>
+        
 
-            <img src="images/Logo de instagram.png" alt="Icono de Instagram" width="50" height="50" />
-          </a>
-        </div>
-        <div>
-          <a href="https://www.youtube.com" target="_blank">
+         </ul>
 
-            <img src="images/Logo youtube.jpg" alt="Icono de Youtube" width="50" height="50" />
-          </a>
-        </div>
-      </div>
-    </div>
+        <!--Menu -->
+        <ul class="col-3 list-unstyled">
+          <li class="font-weight-bold text-uppercase">2021</li>
+          <li><a href="#" class="text-reset">Reseñas</a></li>
+          <li><a href="#" class="text-reset">Socios</a></li>
+          
+       </ul>
 
-
-    <div>
-      <select name="Selección de idioma">
-        <option value="Ingles" selected>Ingles</option>
-        <option value="Español">Español</option>
-        <option value="Frances">Frances</option>
-      </select>
+        <!--Social networks -->
+        <ul class="col-3 list-unstyled">
+          <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+          <li class="d-flex justify-content-between">
+            <!--FB-->
+            <a href="#" class="text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <!--twiter-->
+            <a href="#" class="text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <!--Instagram-->
+            <a href="#" class="text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!--Pinteres-->
+            <a href="#" class="text-reset">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+          </li>
+      </nav>
     </div>
   </footer>
   
@@ -304,6 +314,6 @@
     new WOW().init();
   </script>
 </body>
-<!--body cabezera -->
+
 
 </html>
