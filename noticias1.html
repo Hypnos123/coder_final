@@ -15,55 +15,34 @@
     />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="" href="css/destino.css">
+    <!--CDN Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   </head>
   <body>
     <header class="cabecera">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <img src="images/logo.png" alt="Logo" width="150" height="70" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Inicio</a
-                >
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="noticias1.html">Noticias</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Categorias
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="accion.html">Accion</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="deporte.html">Deporte</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="estrategia.html"
-                      >Estrategia</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="accion.html">Accion</a></li>
+                  <li><a class="dropdown-item" href="Suspenso.html">Suspenso</a></li>
+                  <li><a class="dropdown-item" href="estrategia.html">Estrategia</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -73,24 +52,19 @@
                 <a class="nav-link" href="#contacto">Contactos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="logeo.html">Login</a>
+                <a class="nav-link" href="logeo.html">Login</a>
               </li>
             </ul>
             <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="¿Qué juego buscas?"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
+              <input class="form-control me-2" type="search" placeholder="¿Qué juego buscas?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
+    
+   /*hasta aca llego*/
 
     <div class="slide">
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -319,7 +293,7 @@
       </div>
     </div>
 
-  <article class="article10"> 
+   <article class="article10"> 
     <h1 class="ache2"> LAS CONSOLAS MAS POPULARES </h1>
     <div class="cont-padre">
       <div class="contenedor10">
@@ -379,7 +353,6 @@
       </div>
   </div>
 </article>
-
 
 <article class="article10"> 
   <h1 class="ache2"> LAS PRIMERAS CONSOLAS</h1>
@@ -445,5 +418,59 @@
 </div>
 </article>
 
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <nav class="row">
+      <!--Logo -->
+       <a 
+         href="#" 
+         class="col-3 text-reset text-uppercase d-flex align-items-center">
+         <img width="100px" height="100px"
+         src="images/logo2.png" 
+         alt="Logo weston" 
+         class="img-logo mr-2">
+       </a>
+
+      <!--Menu -->
+       <ul class="col-3 list-unstyled">
+          <li class="font-weight-bold text-uppercase">Todos los derechos reservados</li>
+          <li><a href="#" class="text-reset">Nosotros</a></li>
+          <li><a href="#" class="text-reset">Descuentos</a></li>
+      
+
+       </ul>
+
+      <!--Menu -->
+      <ul class="col-3 list-unstyled">
+        <li class="font-weight-bold text-uppercase">2021</li>
+        <li><a href="#" class="text-reset">Reseñas</a></li>
+        <li><a href="#" class="text-reset">Socios</a></li>
+        
+     </ul>
+
+      <!--Social networks -->
+      <ul class="col-3 list-unstyled">
+        <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+        <li class="d-flex justify-content-between">
+          <!--FB-->
+          <a href="#" class="text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <!--twiter-->
+          <a href="#" class="text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!--Instagram-->
+          <a href="#" class="text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!--Pinteres-->
+          <a href="#" class="text-reset">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+        </li>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
